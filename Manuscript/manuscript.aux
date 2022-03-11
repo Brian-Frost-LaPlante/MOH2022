@@ -2,11 +2,11 @@
 \citation{cooper2018}
 \citation{frost2022}
 \citation{he2018,ren2016}
-\citation{lee2016}
 \newlabel{FirstPage}{{}{1}{}{}{}}
 \@writefile{toc}{\contentsline {title}{The Title Goes Here with Each Initial Letter Capitalized}{1}{}}
 \newlabel{sec:intro}{{}{1}{}{}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {}Introduction}{1}{}}
+\citation{lee2016}
 \citation{frost2022}
 \newlabel{sec:methods}{{}{2}{}{}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {}Methods}{2}{}}
@@ -14,19 +14,27 @@
 \@writefile{toc}{\contentsline {subsection}{\numberline {}Acquisition}{2}{}}
 \newlabel{eqn:lunit}{{1}{2}{}{}{}}
 \newlabel{eqn:points}{{2}{2}{}{}{}}
-\newlabel{sec:registration}{{}{2}{}{}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {}Registration}{2}{}}
+\newlabel{sec:registration}{{}{3}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {}Registration}{3}{}}
 \newlabel{sec:reconstruction}{{}{3}{}{}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {}Reconstruction}{3}{}}
 \newlabel{projmat}{{6}{3}{}{}{}}
-\newlabel{fullreconstruct}{{7}{3}{}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces \textbf  {A} -- Two parallel B-Scans from a single volume, about 50 $\mu $m apart, on which we have marked points $p_1$ and $p_2$ used to determine the longitudinal direction $l$. We have selected the landmark to be the BM at its widest point. We have ensured that the BM appears approximately horizontal in each B-Scan, so as to remove all radial displacement contributions. \textbf  {B} -- A cartoon of the BM, with true longitudinal axis varying in space. We have approximated this axis by a line passing through both $p_1$ and $p_2$. \textbf  {C} -- A cartoon of the BM projected onto the longitudinal-transverse plane, in which our A-Scans lie. We take A-Scans along the $z$ axis at multiple evenly spaced longitudinal positions. We can determine the anatomical components of the $z$ vector via geometry, knowing $l$ and knowing that $z$ has unit length. \textbf  {D} -- A cartoon of the organ of Corti complex and an experimentally acquired A-Scan. We measure the distance between OHC base and BM in the A-Scan, $\Delta z$, to determine the longitudinal displacement between these structures. \textbf  {E} -- A cartoon of the BM in the longitudinal-transverse plane similar to \textbf  {C}. The OHC at a measurement position is $z_l \Delta z$ apical of the BM at that same position. This OHC's \textit  {aligned} BM point is that which is measured at this same longitudinal position.}}{4}{}}
+\newlabel{fig:acq}{{1}{4}{}{}{}}
+\newlabel{fullreconstruct}{{7}{4}{}{}{}}
 \citation{he2018,ren2016}
-\@writefile{lot}{\contentsline {table}{\numberline {I}{\ignorespaces A table of condition numbers for the projection matrix at possible measurement angular deviations.}}{4}{}}
-\newlabel{kappas}{{I}{4}{}{}{}}
-\newlabel{sec:results}{{}{4}{}{}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {}Results}{4}{}}
-\newlabel{sec:conclusion}{{}{4}{}{}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {}Conclusion}{4}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {I}{\ignorespaces A table of condition numbers for the projection matrix at possible measurement angular deviations.}}{5}{}}
+\newlabel{kappas}{{I}{5}{}{}{}}
+\newlabel{sec:results}{{}{5}{}{}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {}Results}{5}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Phase of BM displacement measured in response to 80 dB SPL 15-frequency multitone stimulus, taken at several points along the longitudinal axis of the cochlea. The OCT beam is oriented at $45^\text  {o}$ to the BM, and we have stepped 15 $\mu $m at a time along the cochlea over a 150 $\mu $m range. We display every other step here to make clear the travelling wave pattern of the displacement as we step from apex to base.}}{5}{}}
+\newlabel{fig:acrossl}{{2}{5}{}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Five matched BM phase plots used for registering locations between measurement angles. In each subplot, we show BM displacement phase measured at two different angles with maximum overlap. Each ``step" from left-to-right is measured 15 $\mu $m basal of the previous step.}}{6}{}}
+\newlabel{fig:matching}{{3}{6}{}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Amplitude and phase response of transverse and longitudinal OHC motion, reconstructed at 4 different longitudinal positions spaced 15 $\mu $m apart. Presented also is the BM displacement at this position, taken from the aligned BM displacement with 45$^\text  {o}$ measurement angle. We have normalized this BM displacement value by multiplying by $\sqrt  {2}$ -- the theoretical geometric loss incurred by measuring a purely transverse BM motion at a 45$^\text  {o}$ angle.}}{6}{}}
+\newlabel{fig:ohcresp}{{4}{6}{}{}{}}
+\newlabel{sec:conclusion}{{}{6}{}{}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {}Conclusion}{6}{}}
 \bibdata{manuscriptNotes,mybib}
 \bibcite{cooper2018}{{1}{2018}{{Cooper, Vavakou,\ and\ van~der Heijden}}{{}}}
 \bibcite{frost2022}{{2}{2022}{{Frost, Strimbu,\ and\ Olson}}{{}}}
@@ -36,12 +44,6 @@
 \bibstyle{aipnum4-2}
 \citation{REVTEX42Control}
 \citation{aip41Control}
-\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Phase of BM displacement measured in response to 80 dB SPL 15-frequency multitone stimulus, taken at several points along the longitudinal axis of the cochlea. The OCT beam is oriented at $45^\text  {o}$ to the BM, and we have stepped 15 $\mu $m at a time along the cochlea over a 150 $\mu $m range. We display every other step here to make clear the travelling wave pattern of the displacement as we step from apex to base.}}{5}{}}
-\newlabel{fig:acrossl}{{1}{5}{}{}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Five matched BM phase plots used for registering locations between measurement angles. In each subplot, we show BM displacement phase measured at two different angles with maximum overlap. Each ``step" from left-to-right is measured 15 $\mu $m basal of the previous step.}}{5}{}}
-\newlabel{fig:matching}{{2}{5}{}{}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {}References}{5}{}}
-\newlabel{LastBibItem}{{5}{5}{}{}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Amplitude and phase response of transverse and longitudinal OHC motion, reconstructed at 4 different longitudinal positions spaced 15 $\mu $m apart. Presented also is the BM displacement at this position, taken from the aligned BM displacement with 45$^\text  {o}$ measurement angle. We have normalized this BM displacement value by multiplying by $\sqrt  {2}$ -- the theoretical geometric loss incurred by measuring a purely transverse BM motion at a 45$^\text  {o}$ angle.}}{6}{}}
-\newlabel{fig:ohcresp}{{3}{6}{}{}{}}
-\newlabel{LastPage}{{}{6}{}{}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {}References}{7}{}}
+\newlabel{LastBibItem}{{5}{7}{}{}{}}
+\newlabel{LastPage}{{}{7}{}{}{}}

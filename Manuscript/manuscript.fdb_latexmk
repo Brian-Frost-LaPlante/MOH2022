@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex manuscript"] 1647021786 "manuscript.aux" "manuscript.bbl" "manuscript" 1647021791
+["bibtex manuscript"] 1647032253 "manuscript.aux" "manuscript.bbl" "manuscript" 1647032915
   "./aipnum4-2.bst" 1583576780 71946 9fa96ecf8fb8f8f61f756ef3cc211820 ""
-  "manuscript.aux" 1647021786 3567 d35fc6706f5975221c85bc4ebd31b1be "pdflatex"
-  "manuscriptNotes.bib" 1647021786 69 d99b699d067ab3f906420b0b7ca24b61 "pdflatex"
-  "mybib.bib" 1647021785 1877 cbc1db63b1084a927a25cead00281f3d ""
+  "manuscript.aux" 1647032915 5068 02c32090bc4246ddbb2066fb4ed5323d "pdflatex"
+  "manuscriptNotes.bib" 1647032915 69 d99b699d067ab3f906420b0b7ca24b61 "pdflatex"
+  "mybib.bib" 1647021851 1877 cbc1db63b1084a927a25cead00281f3d ""
   (generated)
   "manuscript.blg"
   "manuscript.bbl"
-["pdflatex"] 1647021786 "manuscript.tex" "manuscript.pdf" "manuscript" 1647021791
+["pdflatex"] 1647032914 "manuscript.tex" "manuscript.pdf" "manuscript" 1647032915
   "/etc/texmf/web2c/texmf.cnf" 1645139963 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -103,18 +103,19 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1581979058 38841 ce3692aa899bb693b90b87eaa5d4d84e ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1645376482 4466278 956ccdc8d57f396eef7b8798b3b11e08 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1645376487 4878322 6a353850616a5ed455b358eaf7b28907 ""
+  "Figures/AlignmentExample.pdf" 1647032868 174969 61de09ca7e08500a7ea01ea7e2ea5f31 ""
   "Figures/ampphase_MOH.png" 1647009967 302178 44f9efc077febfea39ca19f3cf4742b3 ""
   "Figures/displacementacrossl_MOH.png" 1647009954 115348 8a2dd0a04ba30f04b545fdc4609faaeb ""
   "Figures/matching_MOH.png" 1647009963 103068 1e7fa42936b8bb56673e3681e3abe348 ""
   "aip4-2.rtx" 1583576780 59101 63254ac95d0d5315ff79f72d8b6de082 ""
   "aps10pt4-2.rtx" 1583576780 4580 8be054ea3964f38e420de1687d568b8d ""
-  "manuscript.aux" 1647021786 3567 d35fc6706f5975221c85bc4ebd31b1be "pdflatex"
-  "manuscript.bbl" 1647021786 6079 d8255c3570b94864571bd0f76c8eb6fc "bibtex manuscript"
-  "manuscript.tex" 1647019865 20356 7d64cf1c26706aea4c212c6d6ac8f9bc ""
+  "manuscript.aux" 1647032915 5068 02c32090bc4246ddbb2066fb4ed5323d "pdflatex"
+  "manuscript.bbl" 1647032253 6079 d8255c3570b94864571bd0f76c8eb6fc "bibtex manuscript"
+  "manuscript.tex" 1647032334 23624 786d5e0a7104b314268a61c09b301c1d ""
   "revsymb4-2.sty" 1583576780 5428 b8bbe8ea3f87c256cd3ac0ee4de9ee9b ""
   "revtex4-2.cls" 1583576780 200709 8da12ed2f3f59dff0fb491344cc092b2 ""
   (generated)
   "manuscript.pdf"
-  "manuscript.aux"
   "manuscript.log"
+  "manuscript.aux"
   "manuscriptNotes.bib"

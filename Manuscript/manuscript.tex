@@ -32,7 +32,7 @@ Department of Biomedical Engineering, Columbia University, 351 Engineering Terra
 
 
 \begin{abstract}
-
+	Intra-organ of Corti displacement measurements made via optical coherence tomography have provided significant information about cochlear micromechanics in recent years. However, several ambiguities inherent to this modality have complicated interpretation of these measurements, along with causing apparent disagreements between data from different groups. Among these ambiguities is the fact that optical coherence tomography measures only a one-dimensional projection of a three-dimensional motion onto an axis with no physiological relevance. Moreover, the optical axis may make a significant angle with the basilar membrane normal, meaning that structures measured in a single measurement may lie in different tonotopic cross-sections. We have developed a method which accounts for both of these ambiguities inherent to optical coherence tomography measurements to reconstruct the two-dimensional longitudinal-transverse components of displacements of structures within the organ of Corti. This is performed via taking data at multiple longitudinal positions at two viewing angles without any \textit{a priori} knowledge of the measurement locations or viewing angles. We present a sample data set in which we have applied this program to reconstruct the transverse-longitudinal motion of the base of the outer hair cells in the base of the sensitive gerbil cochlea, which suggest that certain disparate phase response measurements between multiple groups may be explained by taking the measurement angle into account.
 \end{abstract}
 
 \maketitle
@@ -59,13 +59,13 @@ Department of Biomedical Engineering, Columbia University, 351 Engineering Terra
 		\label{eqn:lunit}
 		l = \frac{p_2-p_1}{|p_2-p_1|}.
 	\end{equation}
-}
+This process is illustrated in panels A and B of Fig. \ref{fig:acq}.}
 \par{We can find points of measurement at fixed increments along the longitudinal direction. If we start at a point $q_0$, and want to measure $N$ points over longitudinal distance $L$, we measure at 
 	\begin{equation}
 		\label{eqn:points}
 		q_n = q_0 + \frac{nL}{N}l,\;n=0,1,\ldots,N-1.
 	\end{equation}
-}
+This is illustrated in panel C of Fig. \ref{fig:acq}.}
 \par{We take volume scans after each run so that outside of the time pressure of an experiment, we can apply our more complex orientation program\cite{frost2022}. In doing so, we can assess the accuracy of our assumption that the radial component of our measurement axis is 0, as well as the direction of the longitudinal vector.}
 
 \subsection{\label{sec:registration}Registration}
@@ -79,10 +79,16 @@ coordinates, $z = (z_l, z_t)$.
 		z_l &= \frac{z_2-z_1}{|p_2-p_1|},\\
 		z_t &= \sqrt{1-z_l^2}.
 	\end{align}
-}
-\par{Knowing this, we can relate the OHC and BM longitudinal locations within a single measurement. If the structures along a single measurement axis are spaced $\Delta z$ apart, then the OHCs lie $\Delta l = z_l \Delta z$ apical of the BM. The measured BM $\Delta l$ apical of this measurement is thereby in the same longitudinal cross-section as the OHC in the first measurement. We call these BM and OHC measurements \textit{aligned} to one another. At each measurement angle, we compose a list of all aligned OHC and BM measurements.}
+This is illustrated in panel C of Fig. \ref{fig:acq}.}
+\par{Knowing this, we can relate the OHC and BM longitudinal locations within a single measurement. If the structures along a single measurement axis are spaced $\Delta z$ apart, then the OHCs lie $\Delta l = z_l \Delta z$ apical of the BM. The measured BM $\Delta l$ apical of this measurement is thereby in the same longitudinal cross-section as the OHC in the first measurement. We call these BM and OHC measurements \textit{aligned} to one another. At each measurement angle, we compose a list of all aligned OHC and BM measurements. This process is illustrated in panels D and E of Fig. \ref{fig:acq}.}
 \par{To register points to one another between viewing angles, we use the phase of BM motion. By matching the phase responses of BM measurements taken at different viewing angles, we can register the cross-sections in which these BM motions were measured. This operates under the assumption that BM motion is entirely transverse, so that its phase response at each cross-section will be the same at each viewing angle. }
 \par{Having registered BM points to one another, we can then consult our list of aligned BM-OHC pairs. The OHCs aligned to registered BM positions are also registered, allowing us to isolate the same OHCs at different viewing angles.}
+
+\begin{figure}[h]
+	\includegraphics[width=\textwidth]{Figures/AlignmentExample.pdf}
+	\caption{\textbf{A} -- Two parallel B-Scans from a single volume, about 50 $\mu$m apart, on which we have marked points $p_1$ and $p_2$ used to determine the longitudinal direction $l$. We have selected the landmark to be the BM at its widest point. We have ensured that the BM appears approximately horizontal in each B-Scan, so as to remove all radial displacement contributions. \textbf{B} -- A cartoon of the BM, with true longitudinal axis varying in space. We have approximated this axis by a line passing through both $p_1$ and $p_2$. \textbf{C} -- A cartoon of the BM projected onto the longitudinal-transverse plane, in which our A-Scans lie. We take A-Scans along the $z$ axis at multiple evenly spaced longitudinal positions. We can determine the anatomical components of the $z$ vector via geometry, knowing $l$ and knowing that $z$ has unit length. \textbf{D} -- A cartoon of the organ of Corti complex and an experimentally acquired A-Scan. We measure the distance between OHC base and BM in the A-Scan, $\Delta z$, to determine the longitudinal displacement between these structures. \textbf{E} -- A cartoon of the BM in the longitudinal-transverse plane similar to \textbf{C}. The OHC at a measurement position is $z_l \Delta z$ apical of the BM at that same position. This OHC's \textit{aligned} BM point is that which is measured at this same longitudinal position.}
+	\label{fig:acq}
+\end{figure}
 
 \subsection{\label{sec:reconstruction}Reconstruction}
 \par{Each OCT measurement is a projection of a true 3-D motion onto the optical $z$ axis. In the current context, we have made efforts to eliminate the representation of radial motion in our projection,so that the problem can be framed as the projection of a 2-D longitudinal-transverse \textit{true motion} $d$ onto a 2-D transverse-longitudinal $z$ axis, forming the \textit{projected motion} $\delta$.}
